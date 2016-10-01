@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TCCFreak</string>
+    <string name="txtsplash">Bem-vindo ao TCCFreak!</string>
+    <string name="edtlogin">Entre com o seu login</string>
+    <string name="txtsenha">Entre com a sua senha</string>
+    <string name="msgCamposObrigatorios">Campos de login e senha obrigatórios!</string>
+    <string name="tituloSair">Sair</string>
+    <string name="msgSair">Deseja realmente sair?</string>
+    <string name="opSim">Sim</string>
+    <string name="opNao">Não</string>
+    <string name="nav_aluno">Alunos</string>
+    <string name="nav_trabalho">Trabalhos</string>
+    <string name="nav_sair">Sair</string>
+    <string name="nav_sincronizacao">Sincronização</string>
+    <string name="nav_sincronizar">Sincronizar</string>
+</resources>

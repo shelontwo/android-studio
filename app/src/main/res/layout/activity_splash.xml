@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="br.edu.webmob.tccfreak.SplashActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/txtSplash"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/txtsplash"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:id="@+id/imgSplash"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/splash_tccfreak" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_frequencia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.webmob.tccfreak.FrequenciaActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edtData"
+        android:hint="Entre com  a Data:" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnTrabalho" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edtAluno"
+        android:hint="Nome do Aluno" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Salvar"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSalvar"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Fechar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFechar"
+            android:layout_weight="2.02" />
+    </LinearLayout>
+
+</LinearLayout>
