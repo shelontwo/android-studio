@@ -1,11 +1,13 @@
 package br.edu.webmob.tccfreak;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -37,6 +39,9 @@ public class FrequenciaActivity extends AppCompatActivity {
     @ViewById
     public Button btnFechar;
 
+    @ViewById
+    public ImageButton btnMapa;
+
     private DatabaseHelper dh;
 
     private SimpleDateFormat sdf;
@@ -51,7 +56,7 @@ public class FrequenciaActivity extends AppCompatActivity {
         edtData.setText(sdf.format(new Date()));
     }
 
-    @Click({R.id.btnSalvar, R.id.btnFechar})
+    @Click({R.id.btnSalvar, R.id.btnFechar, R.id.btnMapa})
     public void doAction(View v){
         if(v.getId() == R.id.btnSalvar){
             Frequencia f= new Frequencia();
@@ -67,6 +72,12 @@ public class FrequenciaActivity extends AppCompatActivity {
             dh.saveFrequencia(f);
             Toast.makeText(getApplicationContext(), "Frequencia salva com sucesso!", Toast.LENGTH_SHORT).show();
             finish();
+        }else{
+
+        }
+        if(v.getId() == R.id.btnMapa){
+            Intent it = new Intent(this,MapaActivity.class);
+            startActivityForResult(it, 100);
         }else{
 
         }

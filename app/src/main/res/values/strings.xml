@@ -20,4 +20,5 @@
     <string name="nav_sair">Sair</string>
     <string name="nav_sincronizacao">Sincronização</string>
     <string name="nav_sincronizar">Sincronizar</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>
