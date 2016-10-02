@@ -56,7 +56,8 @@ public class LoginActivity extends AppCompatActivity {
                         // finaliza a tela de login
                         finish();
                     } else {
-                        // TODO: (1,00) Adicionar mensagem para avisar o usuário que o login e/ou senha inválidos!
+                        // TODO: (1,00) Adicionar mensagem para avisar o usuário que o login e/ou senha inválidos! + ok
+                        Toast.makeText(getApplicationContext(), "Login invalido", Toast.LENGTH_SHORT).show();
                         edtLogin.setText("");
                         edtSenha.setText("");
                         edtLogin.requestFocus();

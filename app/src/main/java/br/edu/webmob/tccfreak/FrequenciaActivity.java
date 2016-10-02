@@ -39,9 +39,6 @@ public class FrequenciaActivity extends AppCompatActivity {
     @ViewById
     public Button btnFechar;
 
-    @ViewById
-    public ImageButton btnMapa;
-
     private DatabaseHelper dh;
 
     private SimpleDateFormat sdf;
@@ -75,11 +72,6 @@ public class FrequenciaActivity extends AppCompatActivity {
         }else{
 
         }
-        if(v.getId() == R.id.btnMapa){
-            Intent it = new Intent(this,MapaActivity.class);
-            startActivityForResult(it, 100);
-        }else{
 
-        }
     }
 }

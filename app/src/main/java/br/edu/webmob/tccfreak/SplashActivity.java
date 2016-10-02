@@ -93,7 +93,9 @@ public class SplashActivity extends AppCompatActivity {
         mVisible = true;
         mContentView = findViewById(R.id.txtSplash);
 
-        // TODO: (2,50) Configure o gradle do projeto para suportar a biblioteca AndroidAnnotations(https://github.com/excilys/androidannotations/wiki/Building-Project-Gradle)
+        // TODO: (2,50) Configure o gradle do projeto para suportar a biblioteca AndroidAnnotations(https://github.com/excilys/androidannotations/wiki/Building-Project-Gradle) - ja esta configurado
+        // apt "org.androidannotations:androidannotations:$AAVersion"
+        //compile "org.androidannotations:androidannotations-api:$AAVersion"
         // Set up the user interaction to manually show or hide the system UI.
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +106,7 @@ public class SplashActivity extends AppCompatActivity {
 
         // chamada da tela de login
         Handler h = new Handler();
-        // TODO: (0,50) Aumentar o tempo de espera da tela splash para 4s.
+        // TODO: (0,50) Aumentar o tempo de espera da tela splash para 4s. - ok
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -119,7 +121,7 @@ public class SplashActivity extends AppCompatActivity {
                 // fechando a splash
                 finish();
             }
-        }, 3000);
+        }, 4000);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package br.edu.webmob.tccfreak;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -9,6 +10,7 @@ import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,6 +21,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -170,8 +173,24 @@ public class PrincipalActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         // TODO: (2,50) Implementar a chamada de uma tela sobre(com informações do autor e do sistema). Utilizar a opção settings do menu para chamar a tela sobre.
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.mn_sobre) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+
+            final EditText et = new EditText();
+
+            // set prompts.xml to alertdialog builder
+            alertDialogBuilder.setView(et);
+
+            // set dialog message
+            alertDialogBuilder.setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                }
+            });
+
+            // create alert dialog
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            // show it
+            alertDialog.show();
         }
 
         return super.onOptionsItemSelected(item);
@@ -184,13 +203,21 @@ public class PrincipalActivity extends AppCompatActivity
         int id = item.getItemId();
         // TODO: (1,50) Adicionar uma snackbar do Android para indicar qual opção foi selecionada.
         if (id == R.id.nav_aluno) {
-            // Handle the camera action
+            /*Snackbar snackbar = Snackbar
+                    .make(item, "Aluno Show", Snackbar.LENGTH_LONG);
+            snackbar.show();*/
         } else if (id == R.id.nav_trabalho) {
-
+            /*Snackbar snackbar = Snackbar
+                    .make(item, "Trabalho Show", Snackbar.LENGTH_LONG);
+            snackbar.show();*/
         } else if (id == R.id.nav_sair) {
-
+            /*Snackbar snackbar = Snackbar
+                    .make(item, "Sair Show", Snackbar.LENGTH_LONG);
+            snackbar.show();*/
         } else if (id == R.id.nav_sincronizar) {
-
+            /*Snackbar snackbar = Snackbar
+                    .make(item, "Sincronizar Show", Snackbar.LENGTH_LONG);
+            snackbar.show();*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

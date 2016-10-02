@@ -58,6 +58,5 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile 'com.j256.ormlite:ormlite-core:5.0'
     compile 'com.j256.ormlite:ormlite-android:5.0'
-    compile 'com.google.android.gms:play-services-maps:9.6.1'
     testCompile 'junit:junit:4.12'
 }
